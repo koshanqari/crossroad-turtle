@@ -14,10 +14,10 @@ class CarManager(turtle.Turtle):
         self.shape('turtle')
         self.setheading(180)
         self.color(choice(COLORS))
-        self.goto(randint(-300, 300), randint(-300, 300))
+        self.goto(randint(-300, 300), randint(-260, 280))
     
     def move_left(self):
         self.fd(MOVE_INCREMENT)
 
     def car_reset(self):
-        self.goto(randint(300, 900), randint(-280, 280))
+        self.goto(randint(300, 900), randint(-260, 280))
